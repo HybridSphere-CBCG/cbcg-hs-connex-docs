@@ -1,7 +1,7 @@
 ---
 title: "Billing & Refund Policy"
 sidebarTitle: "Billing & Refunds"
-description: "Enterprise invoicing terms, subscription cycles, 1M Pulse Fair Use Policy, and 7-day refund guarantee"
+description: "Enterprise invoicing terms, subscription cycles, 1M Pulse Fair Use Policy, and 14-day statutory refund guarantee"
 ---
 
 All financial transactions, recurring subscriptions, and token top-ups on CONNEX Cloud OS execute through PCI-DSS Level 1 certified gateways with automated monthly invoicing and transparent credit reporting.
@@ -13,8 +13,8 @@ All financial transactions, recurring subscriptions, and token top-ups on CONNEX
   <Card title="1M Pulse Fair Use Policy" icon="gauge">
     Practically unlimited cognitive capacity engineered beyond physical human limits (up to 360 turns/month).
   </Card>
-  <Card title="Statutory 7-Day Refund" icon="rotate-ccw">
-    100% full refund guarantee within 7 days of purchase for zero pulse consumption under consumer protection law.
+  <Card title="Statutory 14-Day Refund" icon="rotate-ccw">
+    100% full refund guarantee within 14 days of purchase for zero pulse consumption under consumer protection law.
   </Card>
   <Card title="Real-Time Metering" icon="activity">
     Transparent pulse accounting dashboard with live burn-rate tracking and verifiable Stripe receipts.
@@ -54,23 +54,32 @@ CONNEX operates five standard service tiers optimized for enterprise scale and i
   </Accordion>
 </AccordionGroup>
 
-## 4. Subscription Renewal & Annual Discount
+## 4. Subscription Renewal, Transitions & Annual Discount
 
 1. **Advance Billing Cycles**: Subscriptions renew automatically on the same calendar day each month or year unless cancelled at least 24 hours prior to renewal.
 2. **20% Annual Commitment Discount**: Annual commitments grant an upfront 20% discount ($1,920.00/yr for CONNEX X, $768.00/yr for CONNEX B).
-3. **Instant Tier Upgrades**: Upgrading between plans takes effect immediately, with new pulse quotas and VFS storage allocations provisioned without delay.
+3. **Instant Tier Upgrades & Proration Credit**: Upgrading between plans takes effect immediately. Unused pulse balances from a previous CONNEX P Credit Pass ($20.00) or an active B plan are mathematically settled and credited against the new upgrade invoice.
+4. **Scheduled Downgrades at Period End**: Downgrading to a lower plan incurs no immediate fee ($0) and maintains 100% of your current plan benefits and pulse quotas until the end of your active billing period. At cycle end, unused pulses expire as fully delivered for that period without mid-cycle cash friction, and the lower plan rate automatically initiates for the subsequent billing cycle.
+5. **Annual Commitment Mid-Cycle Cancellation, Discount Clawback & Cap Guard**: For annual subscriptions cancelled prior to completing 12 months:
+   - **Zero Penalty on Unserved Months**: No cancellation fee is charged for unserved future months.
+   - **Discount Clawback**: Used months ($M$) are reconciled at the standard Regular Monthly Rate ($80.00/mo for B / $200.00/mo for X).
+   - **Formula**: `Refund = Annual Payment - (Months Used M × Regular Monthly Price)`.
+   - **Two Protective Caps**: Refund amount is always $\ge \$0.00$ (no reverse-billing), and total discount clawback cannot exceed one month of the regular monthly fee ($80.00 or $200.00), protecting users who utilized 10+ months from forfeiture.
 
-## 5. Subscription Cancellation & 7-Day Refund Policy
+## 5. Subscription Cancellation & 14-Day Statutory Refund Policy
 
 <Steps>
   <Step title="Frictionless Self-Service Cancellation">
-    Users can cancel recurring renewals anytime from their Account Settings with zero penalties. Access remains fully active through the end of the paid billing cycle.
+    Users can cancel recurring monthly renewals anytime from their Account Settings with zero penalties. Plan benefits, features, and remaining pulse quotas remain 100% active until the end of the paid billing cycle, after which pulses expire as the monthly contract is fulfilled in accordance with consumer regulations.
   </Step>
-  <Step title="Statutory 7-Day 100% Refund (Zero Usage)">
-    Under applicable e-commerce consumer protection regulations (such as Article 17 of the Republic of Korea E-Commerce Act), if zero AI pulses have been consumed within 7 days of purchase, users are entitled to a **100% full refund** by emailing `billing@connexbrothers.com`.
+  <Step title="Statutory 14-Day 100% Refund (Zero Usage)">
+    Under applicable e-commerce consumer protection regulations (such as Article 17 of the Republic of Korea E-Commerce Act and FTC Cooling-Off rules), if zero AI pulses have been consumed within 14 days of purchase, users are entitled to a **100% full refund** by emailing `billing@connexbrothers.com`.
   </Step>
-  <Step title="Non-Refundable Scope After Resource Allocation">
-    Once AI pulse consumption initiates or high-performance GPU/TPU computing resources have been allocated, partial or prorated refunds for the remaining cycle duration are not provided due to real-time cloud resource consumption.
+  <Step title="Fair Usage-Deducted Prorated Settlement (Partial Usage Within 14 Days)">
+    If pulses were consumed within the 14-day window, users may still request a statutory refund. Only the fair cost of actually consumed pulses (pulses consumed × pulse unit rate) is deducted, and the remaining balance is refunded directly to your original payment card via Stripe.
+  </Step>
+  <Step title="Post-14-Day Terms">
+    After 14 calendar days, monthly subscription fees are non-refundable due to dedicated cloud resource allocations and run until period end. Annual plans cancelled mid-term qualify for prorated clawback settlement under Section 4.5.
   </Step>
   <Step title="Abuse Mitigation">
     Refund privileges are forfeited if accounts are terminated for automated abuse, scraping, or breach of platform security terms.
